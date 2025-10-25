@@ -3,7 +3,7 @@
   --blue:#007BFF;
   --bg:#FFFFFF;
   --muted:#6b6b6b;
-  --white::#ffffff00
+  --white:#ffffff00
   --glass: rgba(255,255,255,0.8);
   --card-shadow: rgba(20,20,30,0.06);
 }
@@ -79,6 +79,7 @@ a{color:inherit;text-decoration:none}
   .product-grid{grid-template-columns:1fr 1fr}
   .product-card img{height:100px}
 }
+
 
 
 
