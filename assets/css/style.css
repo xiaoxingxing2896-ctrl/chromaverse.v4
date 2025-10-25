@@ -67,7 +67,7 @@ a{color:inherit;text-decoration:none}
 }
 @media (max-width:768px){
   .nav{display:none}
-  .nav-toggle{background:transparent;border:0;font-size:30px;display:block}
+  .nav-toggle{background:#ffffff00;border:0;font-size:30px;display:block}
   .topbar-inner{padding:0 12px}
   .container{padding:12px}
   .product-card img{height:120px}
@@ -78,6 +78,7 @@ a{color:inherit;text-decoration:none}
   .product-grid{grid-template-columns:1fr 1fr}
   .product-card img{height:100px}
 }
+
 
 
 
