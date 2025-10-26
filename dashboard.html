@@ -31,6 +31,30 @@
 
             <div class="card" style="margin-top:16px;min-height:260px;display:flex;align-items:center;justify-content:center;">
                 <div class="muted">图表 / 数据组件 占位区</div>
+            <h2>动态数据看板</h2>
+
+<section class="dashboard">
+  <div class="card">
+    <h3>活动倒计时</h3>
+    <div id="countdown" class="countdown">加载中...</div>
+  </div>
+
+  <div class="card">
+    <h3>众筹进度</h3>
+    <div class="progress-container">
+      <div id="progress-bar" class="progress-bar"></div>
+    </div>
+    <p id="amount"></p>
+    <p id="percent" class="percent"></p>
+  </div>
+
+  <div class="card">
+    <h3>支持人数</h3>
+    <div id="supporters" class="supporters">加载中...</div>
+  </div>
+</section>
+
+<script src="assets/js/dashboard.js"></script>
             </div>
         </section>
 
@@ -38,4 +62,5 @@
     </main>
 </body>
 </html>
+
 
