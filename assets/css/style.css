@@ -81,7 +81,6 @@ a{color:inherit;text-decoration:none}
   .product-card img{height:100px}
 }
 
-/* dashboard */
 .dashboard {
   margin-top: 100px;
   padding: 20px;
@@ -126,6 +125,7 @@ a{color:inherit;text-decoration:none}
     width: 100%;
   }
 }
+
 
 
 
