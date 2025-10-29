@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>动态数据看板 | 新春会</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">新春会</div>
+    <nav>
+      <a href="index.html">主页</a>
+      <a href="values.html">核心价值</a>
+      <a href="dashboard.html" class="active">动态数据看板</a>
+      <a href="about.html">关于我们</a>
+      <a href="join.html">加入我们</a>
+      <a href="support.html">支持我们</a>
+    </nav>
+  </header>
+
+  <main class="dashboard">
+    <div class="dashboard-nav">
+      <button class="tab active" data-target="subscribers">订阅人数</button>
+      <button class="tab" data-target="funds">筹款进度</button>
+      <button class="tab" data-target="daily">每日筹款金额</button>
+    </div>
+
+    <div class="chart-container">
+      <canvas id="subscribersChart"></canvas>
+      <canvas id="fundsChart" class="hidden"></canvas>
+      <canvas id="dailyChart" class="hidden"></canvas>
+    </div>
+  </main>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
