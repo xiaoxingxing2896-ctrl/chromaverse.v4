@@ -35,14 +35,26 @@
             </div>
         </section>
 <form id="subscribeForm">
-  <input type="email" placeholder="输入邮箱订阅">
-  <button type="submit">订阅</button>
+  <input type="email" placeholder="输入邮箱订阅" required>
+  <button type="submit">立即订阅</button>
 </form>
+
+<script>
+document.getElementById("subscribeForm").addEventListener("submit", async e => {
+  e.preventDefault();
+  await fetch("https://xinchunhui-data.<你的账户>.workers.dev/subscribe", {
+    method: "POST"
+  });
+  alert("感谢您的订阅！");
+});
+</script>
+
 
         <footer class="footer">© 2025 华彩新纪元 • 保留所有权利</footer>
     </main>
 </body>
 </html>
+
 
 
 
