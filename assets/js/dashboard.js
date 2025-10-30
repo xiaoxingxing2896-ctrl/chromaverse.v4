@@ -1,3 +1,15 @@
+const apiUrl = 'https://xinchunhui-data.d1-template.xiaoxingxing2896.workers.dev;
+fetch(apiUrl)
+  .then(res => res.json())
+  .then(data => {
+    subscribersChart.data.datasets[0].data = data.subscribers;
+    fundsChart.data.datasets[0].data = data.funds;
+    dailyChart.data.datasets[0].data = data.daily;
+    subscribersChart.update();
+    fundsChart.update();
+    dailyChart.update();
+  });
+
 document.addEventListener("DOMContentLoaded", () => {
   const ctx1 = document.getElementById('subscribersChart').getContext('2d');
   const ctx2 = document.getElementById('fundsChart').getContext('2d');
