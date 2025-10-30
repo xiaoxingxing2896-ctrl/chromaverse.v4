@@ -1,4 +1,4 @@
-const apiUrl = "https://super-block-5474.xiaoxingxing2896.workers.dev";
+const apiUrl = "https://chromaverse_Data.super-block-5474.xiaoxingxing2896.workers.dev";
 fetch(apiUrl)
   .then(res => res.json())
   .then(data => {
