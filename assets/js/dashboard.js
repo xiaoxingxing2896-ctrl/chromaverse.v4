@@ -1,4 +1,4 @@
-const apiUrl = 'https://xinchunhui-data.d1-template.xiaoxingxing2896.workers.dev;
+const apiUrl = 'https://d1-template.xiaoxingxing2896.workers.dev;
 fetch(apiUrl)
   .then(res => res.json())
   .then(data => {
@@ -9,7 +9,6 @@ fetch(apiUrl)
     fundsChart.update();
     dailyChart.update();
   });
-
 document.addEventListener("DOMContentLoaded", () => {
   const ctx1 = document.getElementById('subscribersChart').getContext('2d');
   const ctx2 = document.getElementById('fundsChart').getContext('2d');
